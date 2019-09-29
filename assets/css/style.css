@@ -1,21 +1,20 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url("/assets/images/full-bloom.png");
-	/* background: darkkhaki; */
+	background: url("../images/full-bloom.png");
 }
 
 h2 {
 	color: #4aaaa5;
 }
 
-/* this doesn't work */
-#background {
-	background: url(assets/images/full-bloom.png);
-	background-size: cover;
-
+/* nav bar-heading */
+nav {
+	/* doesn't go all the way to the edge - needs space under it */
+	border-bottom: 2px solid gray;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-/* nav bar-heading */
 ul {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	list-style-type: none;
@@ -34,6 +33,7 @@ li {
 li a {
 	display: block;
 	padding: 15px;
+	color: #777777;
 	/* margin-left: 120px; */
 }
 
@@ -42,25 +42,29 @@ a:link {
 }
 /* end of nav bar section */
 
-/* need logo box */
+/* logo not in same position on each pager - correct on index */
+#logo-link {
+	color: white;
+}
+
 #logo {
-  float: left;
-  width: 200px;
-  height: 60px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 60px;
+	float: left;
+	width: 200px;
+	height: 60px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;
 	color: #ffffff;
-  text-align: center;
-  text-decoration: none;
+	text-align: center;
+	text-decoration: none;
 	background: #4aaaa5;
 	margin-top: 0px;
 	margin-left: 140px;
 }
 /* end of logo box section */
 
-/* photo grid - this is a mess */
+/* photo grid - this is a mess - need lables on photos*/
 .grid-wrapper {
 	/* project grid - CSS Grid */
 	display: grid;
@@ -74,7 +78,7 @@ a:link {
 }
 
 .box {
-/* resize photos for grid */
+	/* resize photos for grid */
 	padding: 10px;
 	margin: 20px;
 }
@@ -87,25 +91,62 @@ img {
 
 /* close but not quite right */
 .content-box {
+	/* border-top: 2px solid gray; */
 	width: 900px;
 	height: 500px;
 	padding: 20px;
-	border: 5px solid gray;
+	/* border: 5px solid gray; */
 	margin: auto;
+	background: #ffffff;
 	/* position: relative;
 	Width: 900px;
 	height: 900px; */
 }
 
-/* form needs styling - doesn't fill content area */
+/* form */
+/* text color needs changed - submit button needs styled */
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
 
-/* needs more spacing between it and photo grid - text postion is off - need blue line*/
+input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea {
+	height: 200px;
+	width: 98%;
+	padding: 0 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+}
+/* end of form */
+
+/* This appears to be done!!! */
 footer {
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	background-color: #666666;
-	text-align: center ;
-	padding: 30px;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 12px;
+	color: #ffffff;
+	border-top: 8px solid #4aaaa5;
+	height: 30px;
+	line-height: 60px;
 }
+/* end of footer */
