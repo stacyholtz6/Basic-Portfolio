@@ -1,0 +1,111 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("/assets/images/full-bloom.png");
+	/* background: darkkhaki; */
+}
+
+h2 {
+	color: #4aaaa5;
+}
+
+/* this doesn't work */
+#background {
+	background: url(assets/images/full-bloom.png);
+	background-size: cover;
+
+}
+
+/* nav bar-heading */
+ul {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	list-style-type: none;
+	margin: 0px 0px 15px 0px;
+	padding: 0;
+	overflow: hidden;
+	/* background-color: orange; */
+}
+
+li {
+	/* too far right should be in line with right edge of content box */
+	float: right;
+	margin-left: 50px;
+}
+
+li a {
+	display: block;
+	padding: 15px;
+	/* margin-left: 120px; */
+}
+
+a:link {
+	text-decoration: none;
+}
+/* end of nav bar section */
+
+/* need logo box */
+#logo {
+  float: left;
+  width: 200px;
+  height: 60px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+	color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+	background: #4aaaa5;
+	margin-top: 0px;
+	margin-left: 140px;
+}
+/* end of logo box section */
+
+/* photo grid - this is a mess */
+.grid-wrapper {
+	/* project grid - CSS Grid */
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+	/* makes img fill the entire card */
+	width: 100%;
+}
+
+.box {
+/* resize photos for grid */
+	padding: 10px;
+	margin: 20px;
+}
+
+img {
+	float: left;
+	padding: 20px;
+}
+/* end of photo grid section */
+
+/* close but not quite right */
+.content-box {
+	width: 900px;
+	height: 500px;
+	padding: 20px;
+	border: 5px solid gray;
+	margin: auto;
+	/* position: relative;
+	Width: 900px;
+	height: 900px; */
+}
+
+/* form needs styling - doesn't fill content area */
+
+/* needs more spacing between it and photo grid - text postion is off - need blue line*/
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #666666;
+	text-align: center ;
+	padding: 30px;
+}
